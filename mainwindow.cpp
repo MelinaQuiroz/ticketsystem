@@ -4,7 +4,6 @@
 
 
 
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -41,6 +40,9 @@ void MainWindow::on_sign_in_clicked()
     }  else {
 
         ui->invalid_text->setText("Welcome");
+
+        qDebug()<<"prueba";
+
     }
 
 
